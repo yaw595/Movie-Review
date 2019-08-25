@@ -77,8 +77,98 @@ body {
 }
 
 .profile {
-    margin: 100px 50px;
+    width: 90%;
+    padding: 75px;
 }
+
+.name {
+    font-size: 65px;
+    font-weight: 600;
+    color: rgb(0, 11, 110);
+    margin-bottom: 17%;
+}
+
+.contact {
+    font-size: 45px;
+    font-weight: 600;
+    color: rgb(0, 11, 110);
+    margin-bottom: 2%;
+}
+
+.contact-info {
+    font-weight: bold;
+}
+
+.contact-soc  > a > i {
+    color: rgb(0, 11, 110);
+    font-size: 24px;
+    margin: 5px;
+}
+
+.subs {
+    height: 300px;
+    background: rgb(0, 38, 53);
+}
+
+.sub-h {
+    text-align: center;
+    padding: 50px 0;
+} 
+
+.input-holder {
+    background: none;
+    width: 60%;
+    height: 45px;
+    padding: 2px;
+    margin-right: 20px;
+    border-bottom: 1px solid white;
+}
+
+#sh {
+    margin: 0;
+    border-radius: 5px;
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+    background: white;
+    border: none;
+    padding: 5px 15px;
+}
+
+#sh:hover {
+    color: rgb(255, 115, 0);
+    transition: all ease-in-out 0.25s;
+}
+
+#sh:focus {
+    outline: none !important;
+    color: rgb(255, 115, 0);
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+#srh {
+    width: 250px;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 0;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 5px 50px;
+}
+
+#srh:focus {
+    width: 250px;
+    color: rgb(255, 248, 246);
+    background: none;
+}
+
+#srh [placeholder="search"] {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+
 
 
 footer {
