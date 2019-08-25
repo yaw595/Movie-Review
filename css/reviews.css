@@ -118,4 +118,36 @@ body {
     font-size: 15px;
     font-weight: bold;
     font-family: 'Lato';
+}
+
+
+footer {
+    position: static;
+    width: 100%;
+    background-color: rgb(1, 0, 73);
+    padding: 25px;
+}
+
+footer ul {
+    margin: 5px;
+}
+
+footer ul a {
+    color: white;
 } 
+
+.social a {
+    font-size: 24px;
+    margin: 5px;
+}
+
+.rud a {
+    font-size: 30px;
+    margin: 5px;
+    
+}
+
+.copy a {
+    font-size: 24px;
+    margin: 5px;
+}
