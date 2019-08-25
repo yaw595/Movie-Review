@@ -1,0 +1,121 @@
+body {
+    background: white ;
+    font-family: 'Raleway';
+}
+
+
+.nav-link, .nav-link:hover {
+    color: black;
+    font-weight: bold;
+}
+
+
+.input-holder {
+    background: rgba(255, 255, 255, 0.5);
+    border-bottom: solid 2px black;
+    height: 45px;
+    padding: 2px;
+    margin-right: 20px;
+}
+
+#sch {
+    margin: 0;
+    border-radius: 50%;
+    color: black;
+    background: none;
+    border: none;
+}
+
+#sch:hover {
+    color: rgb(255, 89, 47);
+    transition: all ease-in-out 0.25s;
+}
+
+#sch:focus {
+    outline: none !important;
+    color: rgb(255, 89, 47);
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+#search {
+    width: 250px;
+    background: none;
+    border: none;
+    color: black;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#search:focus {
+    width: 250px;
+    color: rgb(255, 89, 47);
+    background: rgba(255, 255, 255, 0);
+}
+
+#search [placeholder="search"] {
+    color: rgb(255, 89, 47);
+    font-weight: bold;
+    
+}
+
+.categories {
+    margin: 50px;
+}
+
+.categories  ul li{
+    display: inline-block;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.categories ul li a,
+.categories ul li a:hover {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.categories ul li a:hover {
+    color: black !important;
+    transition: all ease-in-out 0.25s;
+}
+
+.categories ul li a:focus {
+    color: black !important;
+}
+
+.categories ul li a:active {
+    color: black !important;
+}
+
+.movie-cards {
+    margin: 50px;
+}
+
+.card {
+    border: none;
+    width: auto;
+    height: auto;
+    padding: none;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card > a > img {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.yellow {
+    color: rgb(255, 230, 0);
+    font-size: 20px;
+}
+
+.title, .rating {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Lato';
+}

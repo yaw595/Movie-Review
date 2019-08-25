@@ -10,7 +10,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reviews.css">
 
 
 </head>
@@ -23,18 +23,13 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-twitter" style="font-size: 25px;"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-facebook-square" style="font-size: 25px;"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-instagram" style="font-size: 25px;"></i></a>
-                </li>
-            </ul>
-            <a class="navbar-brand" href="#"><img width="25px" height="25px" src="ux/Untitled-5.png" alt=""></a>
+            <div class="wrapper mr-auto">
+                <div class="input-holder d-sm-flex">
+                    <input class="form-control" type="text" id="search" placeholder="search...">
+                    <button id="sch" class="btn btn-primary fa fa-search" type="submit"></button>
+                </div>
+            </div>
+            <a class="navbar-brand" href="index.html"><img width="25px" height="25px" src="ux/Untitled-5.png" alt=""></a>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
@@ -45,6 +40,257 @@
             </ul>
         </div>
     </nav>
+    <main class="main-content">
+        <div class="container-fluid">
+            <div class="row categories">
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="all-cat active" href="#" style="color: black;">All</a>
+                    </li>
+                    <li>
+                        <a class="all-cat" href="#">Drama</a>
+                    </li>
+                    <li>
+                        <a class="all-cat" href="#">Comedy</a>
+                    </li>
+                    <li>
+                        <a class="all-cat" href="#">Sci-Fi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row movie-cards">
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/aladdin-movie-poster-8k-e4-1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text"style="margin: 5px;">
+                    <span class="title pull-left"> Aladin </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/captain-america-civil-war-movie-poster-1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Captain America: Civil War </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/evil-dead-2013-3281.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Evil Dead </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/ex_machina_donal_gleeson_robot_2015_97902_1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Ex Machina </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+        </div>
+        <div class="row movie-cards">
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/gods of Egypt.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Gods of Egypt </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux//how_to_train_your_dragon_2_eret_valka_93058_1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> How to Train Your Dragon 2 </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/kick-ass-2.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> KickAss 2 </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/oblivion-tom-cruise-wallpaper-hd.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Oblivion </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+        </div>
+        <div class="row movie-cards">
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/the_grand_budapest_hotel_gustave_henckels_ralph_fiennes_edward_norton_93057_1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Grand Budapest </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/the_revenant_leonardo_dicaprio_hugh_glass_106918_1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> The Revenant </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/the_wolf_of_wall_street_leonardo_dicaprio_jordan_belfort_92864_1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> The Wolf of Wall Street </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/transformers_age_of_extinction_robot_optimus_prime_99595_1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Transformers: Age of Extinction </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+        </div>
+        <div class="row movie-cards">
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/aladdin-movie-poster-8k-e4-1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Aladin </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/aladdin-movie-poster-8k-e4-1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Aladin </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/aladdin-movie-poster-8k-e4-1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Aladin </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/aladdin-movie-poster-8k-e4-1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Aladin </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+        </div>
+        <div class="row movie-cards">
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/aladdin-movie-poster-8k-e4-1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Aladin </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/aladdin-movie-poster-8k-e4-1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Aladin </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/aladdin-movie-poster-8k-e4-1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Aladin </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="#">
+                        <img class="image-cap-top" src="ux/aladdin-movie-poster-8k-e4-1920x1080.jpg" alt="aladin">
+                    </a>
+                </div>
+                <div class="support-text" style="margin: 5px;">
+                    <span class="title pull-left"> Aladin </span>
+                    <span class="rating pull-right"> <i class="fa fa-star yellow"></i> 5.5/10</span>
+                </div>
+            </div>
+        </div>
+            
+    </main>
 
 
 
