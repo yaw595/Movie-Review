@@ -46,6 +46,7 @@ body {
     color: black;
     outline: none !important;
     box-shadow: none !important;
+    
 }
 
 #search:focus {
@@ -154,7 +155,7 @@ body {
     border-radius: 0;
     outline: none !important;
     box-shadow: none !important;
-    padding: 5px 50px;
+    padding: 5px 30px;
 }
 
 #srh:focus {
