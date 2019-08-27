@@ -46,7 +46,7 @@ body {
     color: black;
     outline: none !important;
     box-shadow: none !important;
-    
+
 }
 
 #search:focus {
@@ -114,7 +114,7 @@ body {
 .sub-h {
     text-align: center;
     padding: 50px 0;
-} 
+}
 
 .input-holder {
     background: none;
@@ -174,16 +174,16 @@ body {
 
 footer {
     position: static;
-    width: 100%;
     background-color: rgb(1, 0, 73);
-    padding: 25px;
+    padding: 30px 25px 25px 25px;
 }
 
 footer ul {
-    margin: 5px;
+    margin-top: 5px;
 }
 
-footer ul a {
+footer p a,
+footer h1 a {
     color: white;
 }
 
@@ -193,7 +193,7 @@ footer ul a {
 }
 
 .rud a {
-    font-size: 30px;
+    font-size: 35px;
     margin: 5px;
 
 }
