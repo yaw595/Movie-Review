@@ -254,6 +254,8 @@ body {
   opacity: 0;
 }
 
+/* RESPONSIVE */
+
 @media (max-width:980px) {
 
   /* For mobile phones: */
