@@ -22,7 +22,7 @@
 
 body {
   color: #FFFFFF;
-  background-color: #27292d;
+  background: #27292d url('../ux/aladdin-movie-poster-8k-e4-1920x1080.jpg') no-repeat center;
   overflow: hidden;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }

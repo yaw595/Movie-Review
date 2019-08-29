@@ -1,3 +1,15 @@
+var colorBtn = document.querySelector('.slider-right');
+var bodyBcg = document.querySelector('body');
+
+var colors = ['orange', 'green', 'blue', 'aqua', 'grey', '#f0f0f0', 'cyan'];
+
+colorBtn.addEventListener('click', changeColor);
+
+function changeColor() {
+    var random = Math.floor(Math.random() * colors.length);
+    bodyBcg.style.backgroundImage = colors[random];
+}
+
 $(document).on('ready', function() {
   var slide = $('.slider-single');
   var slideTotal = slide.length - 1;
