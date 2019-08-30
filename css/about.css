@@ -220,6 +220,11 @@ footer h1 a {
 
     }
 
+    #search {
+        display: inline-block;
+        width: 250px;
+    }
+
     .soc, .rud, .copy {
         text-align: left !important;
     }
