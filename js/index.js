@@ -1,23 +1,49 @@
-var colorBtn = document.querySelector('.slider-right');
-var bodyBcg = document.querySelector('body');
+var backgroundImg = ['ux/aladdin-movie-poster-8k-e4-1920x1080.jpg',
+  'ux/ex_machina_donal_gleeson_robot_2015_97902_1920x1080.jpg',
+  'ux/the_grand_budapest_hotel_gustave_henckels_ralph_fiennes_edward_norton_93057_1920x1080.jpg',
+  'ux/the_revenant_leonardo_dicaprio_hugh_glass_106918_1920x1080.jpg',
+  'ux/the_wolf_of_wall_street_leonardo_dicaprio_jordan_belfort_92864_1920x1080.jpg',
+  'ux/transformers_age_of_extinction_robot_optimus_prime_99595_1920x1080.jpg'
+]; //Add more backgrounds to the array
 
-var colors = ['orange', 'green', 'blue', 'aqua', 'grey', '#f0f0f0', 'cyan'];
+var backgroundImgReverse = ['ux/transformers_age_of_extinction_robot_optimus_prime_99595_1920x1080.jpg',
+  'ux/the_wolf_of_wall_street_leonardo_dicaprio_jordan_belfort_92864_1920x1080.jpg',
+  'ux/the_revenant_leonardo_dicaprio_hugh_glass_106918_1920x1080.jpg',
+  'ux/the_grand_budapest_hotel_gustave_henckels_ralph_fiennes_edward_norton_93057_1920x1080.jpg',
+  'ux/ex_machina_donal_gleeson_robot_2015_97902_1920x1080.jpg',
+  'ux/transformers_age_of_extinction_robot_optimus_prime_99595_1920x1080.jpg',
+  'ux/aladdin-movie-poster-8k-e4-1920x1080.jpg',
+];
 
-colorBtn.addEventListener('click', changeColor);
+var backgroundCount = 0;
 
-function changeColor() {
-    var random = Math.floor(Math.random() * colors.length);
-    bodyBcg.style.backgroundImage = colors[random];
-}
+$(function () {
+  $('body').css('background-image', 'url(' + backgroundImg[backgroundCount] + ')'); //allows a variable for changing background img based in an array, change number in [] to change background...
+});
 
-$(document).on('ready', function() {
+$('.slider-right').on('click', function () {
+  backgroundCount++;
+  if (backgroundCount > backgroundImg.length - 1) backgroundCount = 0;
+  $('body').css('background-image', 'url(' + backgroundImg[backgroundCount] + ')');
+});
+
+$('.slider-left').on('click', function () {
+  backgroundCount++;
+  if (backgroundCount > backgroundImgReverse.length) backgroundCount = 0;
+  $('body').css('background-image', 'url(' + backgroundImgReverse[backgroundCount] + ')');
+});
+
+
+
+
+$(document).on('ready', function () {
   var slide = $('.slider-single');
   var slideTotal = slide.length - 1;
   var slideCurrent = -1;
 
   function slideInitial() {
     slide.addClass('proactivede');
-    setTimeout(function() {
+    setTimeout(function () {
       slideRight();
     }, 500);
   }
@@ -42,7 +68,7 @@ $(document).on('ready', function() {
 
     }
 
-    slide.each(function() {
+    slide.each(function () {
       var thisSlide = $(this);
       if (thisSlide.hasClass('preactivede')) {
         thisSlide.removeClass('preactivede preactive active proactive').addClass('proactivede');
@@ -74,7 +100,7 @@ $(document).on('ready', function() {
     } else {
       var preactiveSlide = slide.eq(slideTotal);
     }
-    slide.each(function() {
+    slide.each(function () {
       var thisSlide = $(this);
       if (thisSlide.hasClass('proactivede')) {
         thisSlide.removeClass('preactive active proactive proactivede').addClass('preactivede');
@@ -89,10 +115,10 @@ $(document).on('ready', function() {
   }
   var left = $('.slider-left');
   var right = $('.slider-right');
-  left.on('click', function() {
+  left.on('click', function () {
     slideLeft();
   });
-  right.on('click', function() {
+  right.on('click', function () {
     slideRight();
   });
   slideInitial();

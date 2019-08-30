@@ -22,8 +22,12 @@
 
 body {
   color: #FFFFFF;
-  background: #27292d url('../ux/aladdin-movie-poster-8k-e4-1920x1080.jpg') no-repeat center;
-  overflow: hidden;
+  background: #27292d;
+  backdrop-filter: blur(8px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: content-box;
+  overflow-x: hidden !important;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
@@ -71,8 +75,10 @@ body {
   right: 0;
   justify-content: center;
   margin: auto;
-  width: 100%;
+  width: auto;
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
 }
 
@@ -160,7 +166,7 @@ body {
 }
 
 .slider-container .slider-content .slider-single.preactive .slider-single-image {
-  opacity: .3;
+  opacity: .7;
   transform: translateX(-25%) scale(0.8);
   margin-left: -75%;
 }
@@ -178,7 +184,7 @@ body {
 }
 
 .slider-container .slider-content .slider-single.proactive .slider-single-image {
-  opacity: .3;
+  opacity: .7;
   transform: translateX(25%) scale(0.8);
   margin-left: 75% !important;
 }
@@ -256,9 +262,14 @@ body {
 
 /* RESPONSIVE */
 
-@media (max-width:980px) {
+@media (max-width:600px) {
 
   /* For mobile phones: */
+
+  body {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
 
   .navbar-toggler{
     color: #FFFFFF;
@@ -270,7 +281,6 @@ body {
 
   .slider-container .slider-content .slider-single .slider-single-image {
     position: relative;
-    display: flex;
     object-fit: cover;
     height: 500px;
     max-width: 400px;
@@ -297,11 +307,11 @@ body {
   }
 
   .slider-container .slider-left {
-    right: 75%;
+    left: -75%;
   }
 
   .slider-container .slider-right {
-    left: 75%;
+    right: -75%;
   }
 
 
