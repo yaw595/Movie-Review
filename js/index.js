@@ -1,36 +1,40 @@
-var backgroundImg = ['ux/aladdin-movie-poster-8k-e4-1920x1080.jpg',
-  'ux/ex_machina_donal_gleeson_robot_2015_97902_1920x1080.jpg',
-  'ux/the_grand_budapest_hotel_gustave_henckels_ralph_fiennes_edward_norton_93057_1920x1080.jpg',
-  'ux/the_revenant_leonardo_dicaprio_hugh_glass_106918_1920x1080.jpg',
-  'ux/the_wolf_of_wall_street_leonardo_dicaprio_jordan_belfort_92864_1920x1080.jpg',
-  'ux/transformers_age_of_extinction_robot_optimus_prime_99595_1920x1080.jpg'
+var background = ['#1b2469',
+  '#5b6063',
+  '#cdaeb4',
+  '#bda299',
+  '#3f464e',
+  '#7b94cd',
 ]; //Add more backgrounds to the array
 
-var backgroundImgReverse = ['ux/transformers_age_of_extinction_robot_optimus_prime_99595_1920x1080.jpg',
-  'ux/the_wolf_of_wall_street_leonardo_dicaprio_jordan_belfort_92864_1920x1080.jpg',
-  'ux/the_revenant_leonardo_dicaprio_hugh_glass_106918_1920x1080.jpg',
-  'ux/the_grand_budapest_hotel_gustave_henckels_ralph_fiennes_edward_norton_93057_1920x1080.jpg',
-  'ux/ex_machina_donal_gleeson_robot_2015_97902_1920x1080.jpg',
-  'ux/transformers_age_of_extinction_robot_optimus_prime_99595_1920x1080.jpg',
-  'ux/aladdin-movie-poster-8k-e4-1920x1080.jpg',
+var backgroundReverse = ['#1b2469',
+  '#7b94cd',
+  '#3f464e',
+  '#bda299',
+  '#cdaeb4',
+  '#5b6063',
+
+
+
+
 ];
 
 var backgroundCount = 0;
 
+
 $(function () {
-  $('body').css('background-image', 'url(' + backgroundImg[backgroundCount] + ')'); //allows a variable for changing background img based in an array, change number in [] to change background...
+  $('body').css('background', '(' + background[backgroundCount] + ')'); //allows a variable for changing background img based in an array, change number in [] to change background...
 });
 
 $('.slider-right').on('click', function () {
   backgroundCount++;
-  if (backgroundCount > backgroundImg.length - 1) backgroundCount = 0;
-  $('body').css('background-image', 'url(' + backgroundImg[backgroundCount] + ')');
+  if (backgroundCount > background.length - 1) backgroundCount = 0;
+  $('body').css('background', background[backgroundCount]);
 });
 
 $('.slider-left').on('click', function () {
   backgroundCount++;
-  if (backgroundCount > backgroundImgReverse.length) backgroundCount = 0;
-  $('body').css('background-image', 'url(' + backgroundImgReverse[backgroundCount] + ')');
+  if (backgroundCount > backgroundReverse.length - 1) backgroundCount = 0;
+  $('body').css('background', backgroundReverse[backgroundCount]);
 });
 
 
