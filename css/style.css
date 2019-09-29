@@ -307,11 +307,11 @@ body {
   }
 
   .slider-container .slider-left {
-    left: -75%;
+    left: -20px;
   }
 
   .slider-container .slider-right {
-    right: -75%;
+    right: -20px;
   }
 
 
